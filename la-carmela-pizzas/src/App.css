@@ -1,0 +1,59 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y colores globales */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--negro-mate);
+  color: var(--gris-suave);
+  line-height: 1.6;
+}
+
+/* Layout general */
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Encabezados globales */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  color: var(--beige-claro);
+}
+
+/* Párrafos globales */
+p {
+  margin-bottom: 15px;
+}
+
+/* Secciones específicas: usar clases, no selectores globales */
+.hero {
+  /* estilos propios en Hero.css */
+}
+
+.quienes-somos {
+  /* estilos propios en Quienes.css */
+}
+
+.productos {
+  /* estilos propios en Productos.css */
+}
+
+/* 📱 Responsividad global */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 1rem;
+  }
+}

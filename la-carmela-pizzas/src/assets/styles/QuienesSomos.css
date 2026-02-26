@@ -1,0 +1,41 @@
+.quienes-somos {
+  background-color: var(--negro-mate); /* fondo sólido */
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.quienes-somos-title {
+  font-size: 2rem;
+  color: var(--beige-claro);
+  margin-bottom: 20px;
+}
+
+.quienes-somos-text {
+  font-size: 1rem;
+  color: var(--gris-suave);
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+  line-height: 1.6;
+}
+
+/* 📱 Móviles */
+@media (max-width: 600px) {
+  .quienes-somos-title {
+    font-size: 1.6rem;
+  }
+  .quienes-somos-text {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}
+
+/* 💻 Desktop */
+@media (min-width: 1025px) {
+  .quienes-somos-title {
+    font-size: 2.8rem;
+  }
+  .quienes-somos-text {
+    font-size: 1.2rem;
+  }
+}

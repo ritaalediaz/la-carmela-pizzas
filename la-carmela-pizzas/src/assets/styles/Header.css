@@ -1,0 +1,84 @@
+header {
+  background-color: rgba(74, 44, 42, 0.7); /* semi-transparente */
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* ✅ alinea la cruz arriba */
+}
+
+/* Menú en desktop */
+.menu-derecha {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-derecha li a {
+  text-decoration: none;
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f5f5f5; /* ✅ color claro delicado */
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-derecha li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #e59866;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none; /* oculto en desktop */
+  font-size: 1.6rem;
+  color: #f5f5f5;
+  cursor: pointer;
+  align-self: flex-start; /* ✅ cruz arriba */
+}
+
+/* 📱 Vista móvil */
+@media (max-width: 991px) {
+  .menu-toggle {
+    display: block; /* ✅ mostrar hamburguesa */
+  }
+
+  .menu-derecha {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* oculto por defecto */
+    margin-top: 0.5rem;
+    background-color: rgba(74, 44, 42, 0.6);
+    padding: 0.8rem;
+    border-radius: 8px;
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .menu-derecha.open {
+    display: flex; /* ✅ mostrar al abrir */
+  }
+
+  .menu-derecha li a {
+    font-size: 0.9rem; /* ✅ más delicado en móvil */
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Animación suave */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

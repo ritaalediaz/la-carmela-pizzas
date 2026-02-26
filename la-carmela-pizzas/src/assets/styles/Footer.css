@@ -1,0 +1,33 @@
+.footer {
+  background-color: rgba(74, 44, 42, 0.7); /* ✅ mismo color que la barra */
+  color: #f5f5f5; /* texto claro */
+  text-align: center; /* ✅ centrado */
+  padding: 20px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.2); /* sombra superior para separar */
+}
+
+.footer-credito {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-top: 10px;
+}
+
+/* 📱 Móviles */
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px;
+  }
+  .footer-credito {
+    font-size: 0.8rem;
+  }
+}
+
+/* 💻 Desktop */
+@media (min-width: 1025px) {
+  .footer {
+    padding: 30px;
+  }
+  .footer-credito {
+    font-size: 1rem;
+  }
+}
