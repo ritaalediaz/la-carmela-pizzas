@@ -3,6 +3,8 @@
   padding: 60px 20px;
   text-align: center;
   color: white;
+  position: relative; /* ✅ asegura visibilidad */
+  z-index: 2;         /* ✅ por encima del Hero */
 }
 
 .quienes-somos-title {
@@ -22,10 +24,11 @@
 /* 📱 Móviles */
 @media (max-width: 600px) {
   .quienes-somos-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem; /* más compacto */
   }
   .quienes-somos-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* texto reducido */
+    line-height: 1.4;   /* menos espaciado */
     padding: 0 10px;
   }
 }
@@ -39,12 +42,4 @@
     font-size: 1.2rem;
   }
 }
-@media (max-width: 600px) {
-  .quienes-somos {
-    background-color: red !important;
-    display: block !important;
-    min-height: 200px;
-  }
-}
-
 
