@@ -23,6 +23,11 @@
 
 /* 📱 Móviles */
 @media (max-width: 600px) {
+  .quienes-somos {
+    background-color: var(--negro-mate) !important; /* ✅ fondo negro en mobile */
+    display: block !important;
+    min-height: 200px;
+  }
   .quienes-somos-title {
     font-size: 1.5rem; /* más compacto */
   }
@@ -42,4 +47,3 @@
     font-size: 1.2rem;
   }
 }
-
