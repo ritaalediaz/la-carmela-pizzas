@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  min-height: 100vh; /* ocupa al menos la pantalla completa */
   background-image: url("/imagen/FONDO1.jpg");
   background-size: cover;
   background-position: center;
@@ -42,6 +42,7 @@
   font-size: 1.2rem;
   margin-bottom: 25px;
 }
+
 .hero-info {
   font-size: 1rem;
   margin-bottom: 20px;
@@ -49,16 +50,14 @@
   font-family: 'Raleway', sans-serif;
 }
 
-
-
 /* ✅ Botón coherente con la barra */
 .hero-button {
   display: inline-block;
-  background-color: rgba(74, 44, 42, 0.7); /* mismo color que header/footer */
-  color: #f5f5f5 !important;               /* fuerza texto blanco */
+  background-color: rgba(74, 44, 42, 0.7);
+  color: #f5f5f5 !important;
   padding: 12px 24px;
   border-radius: 8px;
-  text-decoration: none;                   /* quita subrayado azul */
+  text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -71,8 +70,10 @@
 }
 
 /* 📱 Móviles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .hero {
+    height: auto;       /* se adapta al contenido */
+    min-height: 100vh;  /* asegura que al menos ocupe la pantalla */
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

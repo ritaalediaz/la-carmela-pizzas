@@ -10,7 +10,7 @@ export default function Hero() {
           📲 Pedidos de viernes a domingo
         </p>
         <a
-          href="https://wa.me/5492284516131"
+          href="https://wa.me/5492284516139"
           target="_blank"
           rel="noopener noreferrer"
           className="hero-button"

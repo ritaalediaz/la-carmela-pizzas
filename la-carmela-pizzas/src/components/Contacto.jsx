@@ -7,7 +7,7 @@ export default function Contacto() {
       </p>
       <div className="contacto-icons">
         <a
-          href="https://wa.me/542284516131" // reemplazá con tu número real
+          href="https://wa.me/542284516139" // reemplazá con tu número real
           target="_blank"
           rel="noopener noreferrer"
           className="contacto-icon whatsapp"
