@@ -39,3 +39,12 @@
     font-size: 1.2rem;
   }
 }
+@media (max-width: 600px) {
+  .quienes-somos {
+    background-color: red !important;
+    display: block !important;
+    min-height: 200px;
+  }
+}
+
+
