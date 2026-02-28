@@ -1,3 +1,4 @@
+
 .quienes-somos {
   background-color: var(--negro-mate); /* fondo sólido */
   padding: 60px 20px;
@@ -24,7 +25,7 @@
 /* 📱 Móviles */
 @media (max-width: 600px) {
   .quienes-somos {
-    background-color: var(--negro-mate) !important; /* ✅ fondo negro en mobile */
+    background-color: #1a1a1a !important; /* ✅ negro profundo en mobile */
     display: block !important;
     min-height: 200px;
   }
